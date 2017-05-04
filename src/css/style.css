@@ -11,6 +11,18 @@
   max-height: 60px;
   padding: 2rem 0 !important;
 }
+.order-leave {
+  transition: all 0.5s;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  max-height: 60px;
+}
+.order-leave.order-leave-active {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+  max-height: 0;
+  padding: 0;
+}
 .count-enter {
   transition: all 0.25s;
   -webkit-transform: translateY(100%);
