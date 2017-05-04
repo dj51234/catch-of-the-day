@@ -7,7 +7,7 @@ import StorePicker from './components/StorePicker';
 import NotFound from './components/NotFound';
 
 const Root = () => {
-  const repo = `${window.location.pathname.split('/')[1]}`;
+  const repo = `/${window.location.pathname.split('/')[1]}`;
   return (
     <BrowserRouter basename={repo}>
       <div>
